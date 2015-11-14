@@ -88,3 +88,7 @@ header {
     height: 200px;
     float: right;
 }
+
+li{
+    list-style-type: none;
+}
