@@ -41,6 +41,8 @@ header {
    
 }
 
+
+
 .footer {
     
     position: fixed;
@@ -87,7 +89,7 @@ header {
 .content-left{
     height: 100%;
     float: left;
-    margin-bottom: 80px;
+    margin-bottom: 80px;    
     
 }
 
