@@ -29,13 +29,13 @@ figure.slider {
 }
 figure.slider figure { 
   width: 20%; 
-  height: auto;
+  height: 350px;
   display: inline-block;  
   position: inherit; 
 }
 figure.slider img { 
     width: 100%; 
-    height: auto; }
+    height: 350px; }
 figure.slider figure figcaption { 
   position: absolute; 
   bottom: 0;
