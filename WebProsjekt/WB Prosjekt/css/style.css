@@ -80,8 +80,10 @@ header {
 }
 
 .content-left{
-    height: 200px;
+    height: 100%;
     float: left;
+    margin-bottom: 80px;
+    
 }
 
 .content-right{
