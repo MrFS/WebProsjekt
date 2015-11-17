@@ -1,6 +1,0 @@
-﻿ devPsyk: Hey @Mrjfs could I get your opinion on my app? Learning rails http://codidia.herokuapp.com/
-
-
- http://materializecss.com/
-
- http://getbem.com/ <- Block element modifier.
