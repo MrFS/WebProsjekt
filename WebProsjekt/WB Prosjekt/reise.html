@@ -25,10 +25,10 @@
                 </div>
                 <div id="navbar" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="index.html">Hjem</a></li>
+                        <li><a href="index.html">Hjem</a></li>
                         <li><a href="dest.html">Destinasjoner</a></li>
                         <li><a href="kontakt.html">Kontakt</a></li>
-                        <li><a href="reise.html">Reise</a></li>
+                        <li class="active"><a href="reise.html">Bestill reise</a></li>
                         <li><a href="skip.html">Skip</a></li>
                         <li><a href="tilbud.html">Tilbud</a></li>
                     </ul>
@@ -69,15 +69,39 @@
         <div class="content-container">
 
             <div class="content-left col-md-8">
-                <div class="page-header">
-                    <h2>Velkommen til Cruisetastic <small> - Ledende innen cruisereiser</small></h2>
-                </div>
-                <p>
-                    Her kan du finne informasjon om vårt store og diverse utvalg av cruisereiser.
-                    Se ett stort utvalg av våre destinasjoner her!
-                    Gå gjennom våre skip, velg din favoritt og se når er neste reise med ditt favorittskip.
-                    Du kan også bestille reiser under "Bestill reise" i menyen over!
-                </p>
+               <div class="form">
+                   <link rel="stylesheet" href="form/formoid-metro-cyan.css" type="text/css" />
+                   <script type="text/javascript" src="form/jquery.min.js"></script>
+                   <form class="formoid-metro-cyan" style="background-color:#FFFFFF;font-size:14px;font-family:'Open Sans','Helvetica Neue','Helvetica',Arial,Verdana,sans-serif;color:#666666;max-width:480px;min-width:150px" method="post">
+                       <div class="title"><h2>Bestilling</h2></div>
+                       <div class="element-name"><label class="title">Navn<span class="required">*</span></label><span class="nameFirst"><input type="text" size="8" name="name[first]" required="required" /><label class="subtitle">Fornavn</label></span><span class="nameLast"><input type="text" size="14" name="name[last]" required="required" /><label class="subtitle">Etternavn</label></span></div>
+                       <div class="element-email"><label class="title">Email<span class="required">*</span></label><input class="large" type="email" name="email" value="" required="required" /></div>
+                       <div class="element-phone"><label class="title">Telefon<span class="required">*</span></label><input class="large" type="tel" pattern="[+]?[\.\s\-\(\)\*\#0-9]{3,}" maxlength="24" name="phone" required="required" value="" /></div>
+                       <div class="element-date"><label class="title">Fødselsdato<span class="required">*</span></label><input class="large" data-format="yyyy-mm-dd" type="date" name="date2" required="required" placeholder="yyyy-mm-dd" /></div>
+                       <div class="element-date"><label class="title">Avreise<span class="required">*</span></label><input class="medium" data-format="yyyy-mm-dd" type="date" name="date" required="required" placeholder="yyyy-mm-dd" /></div>
+                       <div class="element-date"><label class="title">Hjemmereise<span class="required">*</span></label><input class="medium" data-format="yyyy-mm-dd" type="date" name="date1" required="required" placeholder="yyyy-mm-dd" /></div>
+                       <div class="element-select">
+                           <label class="title">Destinasjon<span class="required">*</span></label><div class="large">
+                               <span>
+                                   <select name="select" required="required">
+
+                                       <option value="Karibien">Karibien</option>
+                                       <option value="Middelhavet ">Middelhavet </option>
+                                       <option value="Dubai">Dubai</option>
+                                       <option value="Indiske Hav">Indiske Hav</option>
+                                   </select><i></i>
+                               </span>
+                           </div>
+                       </div>
+                       <div class="element-checkbox                                                                                                                                                                                                                                                                                                                                       ">
+                           <label class="title">Det lille ekstra<span class="required">*</span></label>		<div class="column column2"><label><input type="checkbox" name="checkbox[]" value="All inclusive"/ required="required"><span>All inclusive</span></label><label><input type="checkbox" name="checkbox[]" value="Ekstra seng"/ required="required"><span>Ekstra seng</span></label></div><span class="clearfix"></span>
+                           <div class="column column2"><label><input type="checkbox" name="checkbox[]" value="Halvpensjon"/ required="required"><span>Halvpensjon</span></label><label><input type="checkbox" name="checkbox[]" value="Havutsikt"/ required="required"><span>Havutsikt</span></label></div><span class="clearfix"></span>
+                       </div>
+                       <div class="element-textarea"><label class="title">Kommentarer</label><textarea class="medium" name="textarea" cols="20" rows="5"></textarea></div>
+                       <div class="submit"><input type="submit" value="Submit" /></div>
+                   </form><p class="frmd"><a href="http://formoid.com/v29.php">form builder</a> Formoid.com 2.9</p>
+                   <script type="text/javascript" src="form/formoid-metro-cyan.js"></script>
+               </div>
             </div>
 
             <div class="content-right col-md-4">
