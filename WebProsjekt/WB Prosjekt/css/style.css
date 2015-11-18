@@ -79,7 +79,7 @@ header {
 
 .content-container{
     width: 75%;
-    margin: auto;
+    margin: 0 auto;
     
 }
 
@@ -109,4 +109,15 @@ li{
     font: bold;
     font-size: 23px;
     color:red;
+}
+
+.nav>li {
+    position: relative;
+    display: block;
+}
+
+.nav {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
 }

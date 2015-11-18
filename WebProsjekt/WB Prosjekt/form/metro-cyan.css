@@ -161,11 +161,11 @@ Metro style
 */
 @font-face {
   font-family: formoid;
-  src:url('formoid.eot');
-  src:url('formoid.eot?#iefix') format('embedded-opentype'),
-  url('formoid.ttf') format('truetype'),
-  url('formoid.woff') format('woff'),
-  url('formoid.svg#formoid') format('svg');
+  src:url('formfont.eot');
+  src:url('formfont.eot?#iefix') format('embedded-opentype'),
+  url('formfont.ttf') format('truetype'),
+  url('formfont.woff') format('woff'),
+  url('formfont.svg#formoid') format('svg');
   font-weight: normal;
   font-style: normal;
 }
