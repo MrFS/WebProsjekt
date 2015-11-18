@@ -103,3 +103,10 @@ header {
 li{
     list-style-type: none;
 }
+
+.salg{
+    font-family: 'Franklin Gothic';
+    font: bold;
+    font-size: 23px;
+    color:red;
+}

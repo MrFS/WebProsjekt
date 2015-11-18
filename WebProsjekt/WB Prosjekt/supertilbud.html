@@ -1,0 +1,107 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/slider.css" />
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+</head>
+<body>
+
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Cruisetastic</a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+
+                    <li><a href="dest.html">Destinasjoner</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                    <li class="active"><a href="reise.html">Bestill reise</a></li>
+                    <li><a href="skip.html">Skip</a></li>
+                    <li><a href="tilbud.html">Tilbud</a></li>
+                </ul>
+
+            </div><!--/.nav-collapse -->
+        </div>
+    </nav>
+
+    <div id="captioned-gallery">
+        <figure class="slider">
+            <figure>
+                <img src="img/carribien_head.jpg" alt="">
+                <figcaption>Nyt en fantastisk 3-ukers på Karribien</figcaption>
+            </figure>
+            <figure>
+                <img src="img/dubai_head.jpg" alt="">
+                <figcaption>Nyt en fantastisk 2-ukers på cruise i Dubai</figcaption>
+            </figure>
+            <figure>
+                <img src="img/indian_ocean_head.jpg" alt="">
+                <figcaption>Nyt en fantastisk 2-ukers i det indiske hav</figcaption>
+            </figure>
+            <figure>
+                <img src="img/mediteranien_head.jpg" alt="">
+                <figcaption>Nyt en fantastisk 4-ukers i middelhavet</figcaption>
+            </figure>
+        </figure>
+    </div>
+
+    <!--Content Index-->
+
+    <div class="content-container">
+
+        <div class="fuckface">
+            <div class="form">
+                <link rel="stylesheet" href="form/formoid-metro-cyan.css" type="text/css" />
+                <script type="text/javascript" src="form/jquery.min.js"></script>
+                <form class="formoid-metro-cyan" style="background-color:#FFFFFF;font-size:14px;font-family:'Open Sans','Helvetica Neue','Helvetica',Arial,Verdana,sans-serif;color:#666666;max-width:480px;min-width:150px" method="post">
+                    <div class="title"><h2>Bestilling</h2></div>
+                    <div class="element-name"><label class="title">Navn<span class="required">*</span></label><span class="nameFirst"><input type="text" size="8" name="name[first]" required="required" /><label class="subtitle">Fornavn</label></span><span class="nameLast"><input type="text" size="14" name="name[last]" required="required" /><label class="subtitle">Etternavn</label></span></div>
+                    <div class="element-email"><label class="title">Email<span class="required">*</span></label><input class="large" type="email" name="email" value="" required="required" /></div>
+                    <div class="element-phone"><label class="title">Telefon<span class="required">*</span></label><input class="large" type="tel" pattern="[+]?[\.\s\-\(\)\*\#0-9]{3,}" maxlength="24" name="phone" required="required" value="" /></div>
+                    <div class="element-date"><label class="title">Fødselsdato<span class="required">*</span></label><input class="large" data-format="yyyy-mm-dd" type="date" name="date2" required="required" placeholder="yyyy-mm-dd" /></div>
+                  
+                    <div class="element-select">
+                        <label class="title">Destinasjon<span class="required">*</span></label><div class="large">
+                            <span>
+                                <select name="select" required="required">
+
+                                    <option value="Karibien">Karibien - 14 dagers tilbud - 12.01.2016 til 26.01.2016</option>                        
+                                    <option value="Indiske Hav">Indiske Hav - 10 dagers tilbud - 02.02.2016 til 12.02.2016</option>
+                                </select><i></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="element-checkbox                                                                                                                                                                                                                                                                                                                                       ">
+                        <label class="title">Det lille ekstra<span class="required">*</span></label>		<div class="column column2"><label><input type="checkbox" name="checkbox[]" value="All inclusive"/ required="required"><span>All inclusive</span></label><label><input type="checkbox" name="checkbox[]" value="Ekstra seng"/ required="required"><span>Ekstra seng</span></label></div><span class="clearfix"></span>
+                        <div class="column column2"><label><input type="checkbox" name="checkbox[]" value="Halvpensjon"/ required="required"><span>Halvpensjon</span></label><label><input type="checkbox" name="checkbox[]" value="Havutsikt"/ required="required"><span>Havutsikt</span></label></div><span class="clearfix"></span>
+                    </div>
+                    <div class="element-textarea"><label class="title">Kommentarer</label><textarea class="medium" name="textarea" cols="20" rows="5"></textarea></div>
+                    <div class="submit"><input type="submit" value="Submit" /></div>
+                </form><p class="frmd"><a href="http://formoid.com/v29.php">form builder</a> Formoid.com 2.9</p>
+                <script type="text/javascript" src="form/formoid-metro-cyan.js"></script>
+            </div>
+        </div>
+    </div>
+
+
+
+    <footer class="footer">
+        <div class="container">
+            <p class="text-muted">Cruisetastic &copy;</p>
+        </div>
+    </footer>
+</body>
+</html>
