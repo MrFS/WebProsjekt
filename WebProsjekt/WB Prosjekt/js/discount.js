@@ -1,9 +1,4 @@
 ﻿function edValueKeyPress() {
-    var edValue = document.getElementById("medlemsnummer");
-    var s = edValue.value;
-
-    var lblValue = document.getElementById("medlem");
-    lblValue.innerText = "The text box contains: " + s;
 
     if (document.forms["frm"].medlemsnummer.value == "15822454" ||
         document.forms["frm"].medlemsnummer.value == "442548464" ||
