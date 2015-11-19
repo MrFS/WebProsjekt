@@ -1,22 +1,4 @@
-﻿//function MedlemsNummero() {
-//    if (document.forms['frm'].medlemsnummer.value == "1234567890") {
-//        alert('Message body is empty');
-//    }
-//}
-
-//function onLoadd() {
-//    onload.medlem.innerHTML = ("Trolololololo");
-//}
-
-
-//function chkMedlem() {
-//    if (document.forms["frm"].medlemsnummer.value == "1337") {
-//        alert("rewrwerewerwerw");
-//        document.getElementById('medlem').innerHTML = 'your tip has been submitted!';
-//    }
-//}
-
-function edValueKeyPress() {
+﻿function edValueKeyPress() {
     var edValue = document.getElementById("medlemsnummer");
     var s = edValue.value;
 
@@ -42,24 +24,4 @@ function edValueKeyPress() {
               document.getElementById('medlem').innerHTML = 'Du har skrevet ett gyldig medlemsnummer. <br /> 20% vil bli trukket fra på sluttfaktura.';
     }
 
-    //var s = $("#edValue").val();
-    //$("#lblValue").text(s);    
 }
-
-//function addLoadEvent(func) {  
-//    var oldonload = window.onload;  
-//    if (typeof window.onload != 'function') {  
-//        window.onload = func;  
-//    } else {  
-//        window.onload = function() {  
-//            if (oldonload) {  
-//                oldonload();  
-//            }  
-//            func();  
-//        }  
-//    }  
-//}  
-
-//addLoadEvent(function() {  
-//    document.getElementById('medlem').innerHTML = 'your tip has been submitted!';
-//})
