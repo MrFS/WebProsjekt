@@ -9,8 +9,18 @@
         <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="js/discount.js"></script>
     </head>
-    <body>
+    <body onload="return onLoadd()">
+
+        <!--<script type=text/javascript>
+            function hide(){
+            document.getElementById('text1').style.visibility='hidden';
+            }
+            function show(){
+            document.getElementById('text1').style.visibility='visible';
+            }
+        </script>-->
 
         <nav class="navbar navbar-default navbar-fixed-top" style="height: 75px;">
             <div class="container">
@@ -59,7 +69,7 @@
                <div class="form">
                    <link rel="stylesheet" href="form/metro-cyan.css" type="text/css" />
                    <!--<script type="text/javascript" src="form/jquery.min.js"></script>-->
-                   <form class="formoid-metro-cyan" action="http://www.iie.hist.no/fag/webutvikling1/prosjekt/behandle.php" style="background-color:#FFFFFF;font-size:14px;font-family:'Open Sans','Helvetica Neue','Helvetica',Arial,Verdana,sans-serif;color:#666666;max-width:480px;min-width:150px" method="post">
+                   <form name="frm" class="formoid-metro-cyan" action="http://www.iie.hist.no/fag/webutvikling1/prosjekt/behandle.php" style="background-color:#FFFFFF;font-size:14px;font-family:'Open Sans','Helvetica Neue','Helvetica',Arial,Verdana,sans-serif;color:#666666;max-width:480px;min-width:150px" method="post">
                        <div class="title"><h2>Bestilling<small> (alle felt markert med * må fylles ut)</small></h2></div>
                        <div class="element-name"><label class="title">Navn<span class="required">*</span></label><span class="nameFirst"><input type="text" size="8" name="name[first]" required="required" /><label class="subtitle">Fornavn</label></span><span class="nameLast"><input type="text" size="14" name="name[last]" required="required" /><label class="subtitle">Etternavn</label></span>
                        </div>
@@ -77,13 +87,15 @@
                            <label class="title">
                                Medlemsnummer<span class="required"></span>
                            </label>
-                           <input class="large" type="tel" pattern="[+]?[\.\s\-\(\)\*\#0-9]{3,}" maxlength="13" name="phone" required="required" value="" />
+                           <input onKeyPress="edValueKeyPress()" onKeyUp="edValueKeyPress()" class="large" type="tel" id="medlemsnummer" pattern="[+]?[\.\s\-\(\)\*\#0-9]{3,}" maxlength="13" name="medlemsnummer" required="" value="" />
+                           <span id="medlem"></span>
                        </div>
-
+                       
                        <div class="element-date">
                            <label class="title">Fødselsdato<span class="required">*</span></label>
                            <input class="large" data-format="yyyy-mm-dd" type="date" name="date2" required="required" placeholder="yyyy-mm-dd" />
                        </div>
+                       
                        <div class="element-select">
                            <label class="title">Destinasjon<span class="required">*</span></label><div class="large">
                                <span>
@@ -96,12 +108,15 @@
                                </span>
                            </div>
                        </div>
+
+
+
                        <div class="element-checkbox                                                                                                                                                                                                                                                                                                                                       ">
                            <label class="title">Det lille ekstra<span class="required">* <small>pr dag</small></span></label>		<div class="column column2"><label><input type="checkbox" name="checkbox[]" value="All inclusive" required="required"><span>All inclusive - 300 kr</span></label><label><input type="checkbox" name="checkbox[]" value="Ekstra seng" required="required"><span>Ekstra seng - 100 kr</span></label></div><span class="clearfix"></span>
                            <div class="column column2"><label><input type="checkbox" name="checkbox[]" value="Halvpensjon" required="required"><span>Halvpensjon - 150 kr</span></label><label><input type="checkbox" name="checkbox[]" value="Havutsikt" required="required"><span>Havutsikt - 50 kr</span></label></div><span class="clearfix"></span>
                        </div>
                        <div class="element-textarea"><label class="title">Kommentarer</label><textarea class="medium" name="textarea" cols="20" rows="5"></textarea></div>
-                       <div class="submit"><input type="submit" value="Submit" /></div>
+                       <div class="submit"><input type="submit" value="Submit" onclick="chkMedlem()" /></div>
                    </form>
                    <script type="text/javascript" src="form/metro-cyan.js"></script>
                </div>
