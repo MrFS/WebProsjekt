@@ -1,4 +1,13 @@
-﻿function edValueKeyPress() {
+﻿//Dette er en JavaScript
+//Denne aktiveres hver kan det registreres en onKeyPress & onKeyUp
+//Dette gir en "Live" følelse
+//Koden ser gjennom tallene i textboxen "medlemsnumer", stemmer de overens
+//printer den ut en textverdi til <span id="medlem"> (Y)
+
+//Det å ha medlemsnummrene i selve JavaScript filen utgjør en betydelig sikkerhetsrisiko
+//Noe som ikke er aktuelt for en seriøs aktør. Dette løses ved å bruke serverside språk slik som PHP.
+
+function edValueKeyPress() {
 
     if (document.forms["frm"].medlemsnummer.value == "15822454" ||
         document.forms["frm"].medlemsnummer.value == "442548464" ||
