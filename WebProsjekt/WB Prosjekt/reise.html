@@ -2,6 +2,7 @@
 
 <html lang="en">
     <head>
+        <!--kobler html opp mot css-filer og javascript-->
         <meta charset="utf-8" />
         <title>Bestill reise - Cruisetastic</title>
         <link rel="stylesheet" type="text/css" href="css/style.css" />
@@ -14,7 +15,7 @@
     <body onload="return onLoadd()">
 
         
-
+        <!--navigasjonstabber øverst på siden-->
         <nav class="navbar navbar-default navbar-fixed-top" style="height: 75px;">
             <div class="container">
                 <div class="navbar-header">
@@ -33,6 +34,7 @@
             </div>
         </nav>
 
+        <!--slideshow bilder-->
         <div id="captioned-gallery">
             <figure class="slider">
                 <figure>
@@ -58,10 +60,10 @@
 
         <div class="content-container">
 
+            <!--form for å bestille tur, validering utføres delvis av html5 og delvis av javascript-->
             <div class="fuckface">
                <div class="form">
-                   <link rel="stylesheet" href="form/metro-cyan.css" type="text/css" />
-                   <!--<script type="text/javascript" src="form/jquery.min.js"></script>-->
+                   <link rel="stylesheet" href="form/metro-cyan.css" type="text/css" />                  
                    <form name="frm" class="formoid-metro-cyan" action="http://www.iie.hist.no/fag/webutvikling1/prosjekt/behandle.php" style="background-color:#FFFFFF;font-size:14px;font-family:'Open Sans','Helvetica Neue','Helvetica',Arial,Verdana,sans-serif;color:#666666;max-width:480px;min-width:150px" method="post">
                        <div class="title"><h2>Bestilling<small> (alle felt markert med * må fylles ut)</small></h2></div>
                        <div class="element-name"><label class="title">Navn<span class="required">*</span></label><span class="nameFirst"><input type="text" size="8" name="name[first]" required="required" /><label class="subtitle">Fornavn</label></span><span class="nameLast"><input type="text" size="14" name="name[last]" required="required" /><label class="subtitle">Etternavn</label></span>
@@ -101,9 +103,7 @@
                                </span>
                            </div>
                        </div>
-
-
-
+                                              
                        <div class="element-checkbox                                                                                                                                                                                                                                                                                                                                       ">
                            <label class="title">Det lille ekstra<span class="required">* <small>pr dag</small></span></label>		<div class="column column2"><label><input type="checkbox" name="checkbox[]" value="All inclusive" required="required"><span>All inclusive - 300 kr</span></label><label><input type="checkbox" name="checkbox[]" value="Ekstra seng" required="required"><span>Ekstra seng - 100 kr</span></label></div><span class="clearfix"></span>
                            <div class="column column2"><label><input type="checkbox" name="checkbox[]" value="Halvpensjon" required="required"><span>Halvpensjon - 150 kr</span></label><label><input type="checkbox" name="checkbox[]" value="Havutsikt" required="required"><span>Havutsikt - 50 kr</span></label></div><span class="clearfix"></span>
@@ -117,7 +117,7 @@
             </div>
 
   
-
+        <!--bunntekst med copyright-->
         <footer class="footer">
             <div class="container">
                 <p class="text-muted">Cruisetastic &copy;</p>
